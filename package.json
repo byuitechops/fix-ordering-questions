@@ -3,7 +3,17 @@
   "version": "1.0.0",
   "description": "Post-import child module for the D2l conversion tool. Goes through a converted Canvas course and fixes the ordering questions that were converted to multiple choice questions with no answers.",
   "main": "main.js",
+  "dependencies": {
+    "canvas-wrapper": "github:byuitechops/canvas-wrapper"
+  },
+  "devDependencies": {
+    "async": "^2.6.0",
+    "child-development-kit": "github:byuitechops/child-development-kit",
+    "tap": "^10.7.3"
+  },
   "scripts": {
+    "start": "node ./node_modules/child-development-kit/runChild.js",
+    "inspect": "node --inspect-brk ./node_modules/child-development-kit/runChild.js",
     "test": "tap ./node_modules/child-development-kit/runChild.js -T"
   },
   "repository": {
@@ -15,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/byuitechops/fix-ordering-questions/issues"
   },
-  "homepage": "https://github.com/byuitechops/fix-ordering-questions#readme"
+  "homepage": "https://github.com/byuitechops/fix-ordering-questions#readme",
+  "childType": "postImport"
 }
