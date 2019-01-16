@@ -1,0 +1,19 @@
+{
+  "name": "fix-ordering-questions",
+  "version": "1.0.0",
+  "description": "Post-import child module for the D2l conversion tool. Goes through a converted Canvas course and fixes the ordering questions that were converted to multiple choice questions with no answers.",
+  "main": "main.js",
+  "scripts": {
+    "test": "tap ./node_modules/child-development-kit/runChild.js -T"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byuitechops/fix-ordering-questions.git"
+  },
+  "author": "Seth Bolander",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/byuitechops/fix-ordering-questions/issues"
+  },
+  "homepage": "https://github.com/byuitechops/fix-ordering-questions#readme"
+}
